@@ -8,12 +8,19 @@ function rep()
  console.log(date);
  let daytime;
  let seconds=0;
+ let minutes=0;
  if(date.getSeconds()<10)
  {
     seconds="0"+date.getSeconds();
  }
  else{
     seconds=date.getSeconds();
+ } if(date.getMinutes()<10)
+ {
+    minutes="0"+date.getMinutes();
+ }
+ else{
+    minutes=date.getMinutes();
  }
 let weekday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -22,7 +29,7 @@ document.getElementById("dayname").value= weekday[date.getDay()];
  document.getElementById("month").value= month[date.getMonth()];
  document.getElementById("year").value= date.getFullYear();
  document.getElementById("hour").value= date.getHours();
- document.getElementById("minute").value= date.getMinutes();
+ document.getElementById("minute").value= minutes;
  document.getElementById("second").value=seconds;
  if(date.getHours()>12){
     daytime="PM";
