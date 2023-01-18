@@ -95,7 +95,7 @@ function tfour(){
 }
 function twhr(){
     clearInterval(clock);
-    setInterval(repp,1000)
+   clock= setInterval(repp,1000)
 }
 //setInterval(rep,1000)
 
