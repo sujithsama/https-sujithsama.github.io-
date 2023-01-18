@@ -1,5 +1,5 @@
 console.log("hi");
-let clock=0;
+let clock=setInterval(rep,1000);;
 function rep()
 {
  
