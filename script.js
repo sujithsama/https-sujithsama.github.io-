@@ -9,6 +9,8 @@ function rep()
  let daytime;
  let seconds=0;
  let minutes=0;
+ let hours=0;
+ hours=date.getHours();
  if(date.getSeconds()<10)
  {
     seconds="0"+date.getSeconds();
@@ -28,7 +30,7 @@ document.getElementById("dayname").value= weekday[date.getDay()];
  document.getElementById("day").value= date.getDate();
  document.getElementById("month").value= month[date.getMonth()];
  document.getElementById("year").value= date.getFullYear();
- document.getElementById("hour").value= date.getHours();
+ document.getElementById("hour").value= hours;
  document.getElementById("minute").value= minutes;
  document.getElementById("second").value=seconds;
  if(date.getHours()>12){
@@ -97,5 +99,5 @@ function twhr(){
     clearInterval(clock);
    clock= setInterval(repp,1000)
 }
-//setInterval(rep,1000)
+//setInterval(rep,1000);
 
