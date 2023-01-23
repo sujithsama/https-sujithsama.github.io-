@@ -12,9 +12,7 @@
             color: white;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+           
             min-width: 1000px;
             min-height: 500px;
             max-width: 1900px;
@@ -52,9 +50,25 @@
         .day{
             color: rgb(180, 62, 82);
         }
+        .flexcontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(10, 41, 43);
+            border-bottom: 3px solid red;
+        }
     </style>
+    
 </head>
 <body>
+    <a href="index.html">Home</a>
+   <div class="flexcontainer">
     <div class="flex">
         <div>
             <span class="day" id="day"> </span>
@@ -73,6 +87,7 @@
         </div>
         <div><input type="button" id="button" class="button" value="24-Hr" onclick="tfour()"><input type="button" id="button" class="button" value="12-Hr" onclick="twelve()"></div>
     </div>
+   </div>
     <script src="jsscrpt.js"></script>
 </body>
 </html>
